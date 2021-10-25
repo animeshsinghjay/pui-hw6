@@ -22,10 +22,7 @@
                 Login
                 <img src="./assets/images/login.svg" alt="Login" height="100%" width="80%">
             </div>
-            <div class="hg_item i-4 b-t b-b b-r b-l" id="cart_button">
-                Cart
-                <img src="./assets/images/cart.svg" alt="Cart" height="100%" width="80%">
-            </div>
+            <div class="hg_item i-4 b-t b-b b-r b-l" id="cart_button"><a href="./cart.html">Cart&nbsp;</a><div id="cart_count"><img src="./assets/images/cart.svg" alt="Cart" height="100%" width="80%"></div></div>
         </div>
 
     </header>
@@ -42,9 +39,9 @@
             <div class="r1grid">
                 <div class="r1_item i-1 b-r">
                     <div class="r1-prod-image-grid">
-                        <div class="r1pig_item i-1">
-                            <img src="./assets/images/product-dog-harness/dog-harness-main-big.png" alt="Dog Harness Big" height="100%" width="100%">
-                        </div>
+                        <!-- Main Image -->
+                        <div class="r1pig_item i-1"><img id="item_image" src="./assets/images/product-dog-harness/color-teal.png" alt="Dog Harness Big" height="100%" width="100%"></div>
+                        
                         <div class="r1pig_item i-2 b-b">
                             <img src="./assets/images/product-dog-harness/up-chevron.png" alt="Dog Harness Big" height="100%" width="100%">
                         </div>
@@ -70,15 +67,13 @@
                 </div>
                 <div class="r1_item i-2">
                     <div class="r1-prod-desc-grid">
-                        <div class="r1pid_item i-1">
-                            Dog Harness
-                        </div>
-                        <div class="r1pid_item i-2">
-                            $45.99
-                        </div>
+                        
+                        <div id="item_name" class="r1pid_item i-1">Dog Harness</div>
+                        <div id="item_price" class="r1pid_item i-2">$45.99</div>
+                        
                         <div class="r1pid_item i-3">
                             <img src="./assets/images/product-dog-harness/four-stars.png" alt="4/5 Stars" height="80%" width="35%">
-                        </div>
+                        </div>      
                         <div class="r1pid_item i-4">
                             <a href="#reviews">24 Reviews</a>&nbsp;|&nbsp;<a href="#ans_ques">19 Answered Questions</a>
                         </div>
@@ -93,30 +88,18 @@
                                 Size Chart
                             </a>
                         </div>
-                        <div class="r1pid_item i-8">
-                            <img src="./assets/images/product-dog-harness/yellow-circle.png" alt="Yellow" height="48%" width="70%">
-                        </div>
-                        <div class="r1pid_item i-9 b-b b-r b-l b-t">
-                            <img src="./assets/images/product-dog-harness/teal-circle.png" alt="Teal" height="55%" width="92%"> 
-                            Teal
-                        </div>
-                        <div class="r1pid_item i-10">
-                            <img src="./assets/images/product-dog-harness/red-circle.png" alt="Red" height="48%" width="70%">
-                        </div>
-                        <div class="r1pid_item i-11 b-b b-r b-l b-t">
-                            <img src="./assets/images/product-dog-harness/small-size.png" alt="Small" height="55%" width="92%">
-                            Small
-                        </div>
-                        <div class="r1pid_item i-12">
-                            <img src="./assets/images/product-dog-harness/med-size.png" alt="Medium" height="48%" width="70%"> 
-                        </div>
-                        <div class="r1pid_item i-13">
-                            <img src="./assets/images/product-dog-harness/large-size.png" alt="Large" height="48%" width="70%">
-                        </div>
+                        
+                        <div id="color-yellow" class="r1pid_item i-8 color_button"><img src="./assets/images/product-dog-harness/yellow-circle.png" alt="Yellow" height="48%" width="70%">Yellow</div>
+                        <div id="color-teal" class="r1pid_item i-9 color_button selected"><img src="./assets/images/product-dog-harness/teal-circle.png" alt="Teal" height="48%" width="70%">Teal</div>
+                        <div id="color-red" class="r1pid_item i-10 color_button"><img src="./assets/images/product-dog-harness/red-circle.png" alt="Red" height="48%" width="70%">Red</div>
+                        <div id="size-s" class="r1pid_item i-11 size_button selected"><img src="./assets/images/product-dog-harness/small-size.png" alt="Small" height="48%" width="70%">Small</div>
+                        <div id="size-m" class="r1pid_item i-12 size_button"><img src="./assets/images/product-dog-harness/med-size.png" alt="Medium" height="48%" width="70%">Medium</div>
+                        <div id="size-l" class="r1pid_item i-13 size_button"><img src="./assets/images/product-dog-harness/large-size.png" alt="Large" height="48%" width="70%">Large</div>
+                        
                         <div class="r1pid_item i-14 b-t b-r">
                             <img src="./assets/images/product-dog-harness/heart.png" alt="Add to Fav" height="50%" width="15%"> 
                         </div>
-                        <div class="r1pid_item i-15 b-t">
+                        <div id="add-to-cart" class="r1pid_item i-15 b-t">
                             <img src="./assets/images/product-dog-harness/add-to-cart.png" alt="Add to Cart" height="50%" width="15%">
                         </div>
                     </div>
@@ -213,5 +196,5 @@
     </div>
    
 </body>
-
+<script src="script-product-page.js" type="text/javascript"></script> <!-- Linking JavaScript -->
 </html>
