@@ -1,21 +1,15 @@
-# pui-hw5
+# pui-hw6a
 
-## PUI A5 Web Prototyping with HTML/CSS - MuddyPaws website
+## PUI A6a Adding Functionality to a Website with JavaScript - MuddyPaws website
 
-### Bonus (for Extra Credit):
-
-I implemented -  
+### Included Files (over A5):
   
-**3 product detail pages**    
-product-dog-harness.html  
-product-dog-leash.html  
-product-cat-leash.html  
+**Prototypes**    
+lo-fi.pdf
+hi-fi.pdf  
   
-**2 product browsing pages**    
-browse-page.html  
-browse-page-cust-favs.html  
+**JavaScript File**    
+script-product-page.js
   
-**2 popup modals**  
-popup-login.html, style-login-popup.css  
-popup-size-chart.html, style-size-chart-popup.css  
-  
+**Cart Page**  
+cart.html, style-cart.css  
